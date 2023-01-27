@@ -50,6 +50,9 @@ void ANeonPawn::Tick(float DeltaTime)
 
 	if (!MovementDirection.IsNearlyZero())
 	{
+		// TODO: USE THIS https://www.physicsclassroom.com/class/1DKin/Lesson-6/Kinematic-Equations (REDO MOVEMENT COMPLETELY) 
+		// I think I need to do this, in order to be able to calculate rotations for the animation
+
 		FVector directionNormalized = MovementDirection.GetClampedToSize(0, 1);
 
 		// Move
